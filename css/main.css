@@ -1,0 +1,139 @@
+@import "fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--r);
+    font-weight: 400;
+}
+
+:root {
+    --text-color1: #3A3838;
+    --text-color2: #686868;
+    --text-color3: #FFFFFF;
+    --text-color4: #EBEBEB;
+    --text-color5: #EF4423;
+    --hover-color1: #4169e1;
+    --hover-color2 : #ff0000;
+
+    --r: "roboto";
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    padding: 15px 0;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.navbar-list__link {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color1);
+}
+
+.navbar-list__link:hover {
+    color: #4169e1;
+}
+
+.text-color--red {
+    color: var(--text-color5);
+}
+
+.text-color--red:hover {
+    color: #ff0000
+}
+
+.news-prewiew {
+    margin-bottom: 35px;
+}
+
+.news-prewiew__img {
+    max-width: 1110px;
+    width: 100%;
+}
+
+.item {
+    width: 25%;
+}
+
+/* news-feed */
+.news-feed {
+    display: flex;
+    flex-direction: row;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    transition: transform 0.2s linear;
+}
+
+.news-card:hover {
+    transform: translateY(-15px);
+}
+
+.news-card:hover h2{
+    color: goldenrod;
+}
+
+.news-card__img {
+    width: 100%;
+}
+
+.news-card:nth-child(1){background: #B71C1C;}
+.news-card:nth-child(2){background: #6A1B9A;}
+.news-card:nth-child(3){background: #303F9F;}
+.news-card:nth-child(4){background: #00695C;}
+
+.news-card:nth-child(even) > img {order: 1;}
+
+.news-card__title {
+    font-size: 19px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--text-color3);
+}
+
+.news-card__text {
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: var(--text-color4);
+}
+
+.news-card p, h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+
+
