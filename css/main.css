@@ -61,12 +61,12 @@
     color: #4169e1;
 }
 
-.text-color--red {
+.active {
     color: var(--text-color5);
 }
 
-.text-color--red:hover {
-    color: #ff0000
+.active:hover {
+    color: var(--text-color5);
 }
 
 .news-prewiew {
