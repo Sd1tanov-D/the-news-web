@@ -50,14 +50,20 @@
     column-gap: 20px;
 }
 
-.navbar-list__link {
+.navbar-list__link--header,
+.navbar-list__link--footer {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
     color: var(--text-color1);
 }
 
-.navbar-list__link:hover {
+.navbar-list__link--footer {
+    color: var(--text-color3);
+}
+
+.navbar-list__link--footer:hover,
+.navbar-list__link--header:hover {
     color: #4169e1;
 }
 
@@ -240,9 +246,6 @@
     align-items: center;
 }
 
-.footer-text-color--white {
-    color: var(--text-color3);
-}
 
 
 

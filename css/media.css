@@ -6,30 +6,24 @@
     .news-card__title {font-size: 18px;}
     .news-card__text {font-size: 15px;}
 }
+
 @media (max-width: 1200px) {
     .header {padding: 0 10px;}
     .footer {padding: 0 10px;}
 }
+
 @media (max-width: 1024px) {
     .news-card__text {-webkit-line-clamp: 5; font-size: 14px;}
     .news-card__title {font-size: 17px;}
 }
+
 @media (max-width: 992px) {
-    .header {
-        flex-direction: column;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
+    .header {flex-direction: column;}
+    .footer-content {flex-direction: column;}
     .news-card__text {font-size: 13px; padding-top: 5px;}
     .news-card__title {font-size: 15px;}
     .news-card__content {padding: 5px;}
-
-    .navbar-list {
-        padding-bottom: 10px;
-    }
+    .navbar-list {padding-bottom: 10px;}
 }
 @media (max-width: 768px) {
     .navbar-list {
@@ -38,68 +32,38 @@
         margin-bottom: 15px;
         text-align: center;
     }
-
-    .news-prewiew {
-        display: none;
-    }
-
+    .news-prewiew {display: none;}
     .news-feed {
         display: flex;
         flex-direction: column;
     }
-
     .news-card:nth-child(even) {flex-direction: column}
-
-    .news-card {
-        width: 100%;
-    }
-
-    .news-card:hover {
-        transform: translateY(0px);
-    }
-
+    .news-card {width: 100%;}
+    .news-card:hover {transform: translateY(0px);}
     .news-card__title {-webkit-line-clamp: 1;}
-
     .news-content {flex-direction: column;}
-
-    .news-content__prewiev {
-        width: 100%;
-    }
-    .news-content__text {
-        width: 100%;
-    }
-
-    .navbar-list {
-        padding-bottom: 0;
-    }
+    .news-content__prewiev {width: 100%;}
+    .news-content__text {width: 100%;}
+    .navbar-list {padding-bottom: 0;}
 }
+
 @media (max-width: 576px) {}
+
 @media (max-width: 480px) {
     .news-content__text {
         padding: 15px 5px 5px 15px;
         hyphens: auto;
     }
-
-    .news-content__text__title {
-        font-size: 20;
-    }
-
+    .news-content__text__title {font-size: 20;}
     .news-content__text__text {
         font-size: 16px;
         padding-top: 15px;
     }
 }
+
 @media (max-width: 375px) {
-    .news-content__text {
-        padding: 10px 5px 5px 10px;
-    }
-
-    .news-content__text__title {
-        font-size: 18px;
-    }
-
-    .news-content__text__text {
-        padding-top: 13px;
-    }
+    .news-content__text {padding: 10px 5px 5px 10px;}
+    .news-content__text__title {font-size: 18px;}
+    .news-content__text__text {padding-top: 13px;}
 }
 
